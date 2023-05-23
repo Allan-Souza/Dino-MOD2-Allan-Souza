@@ -97,8 +97,8 @@ class Game:
                 draw_message_component(
                     f"{self.player.type.capitalize()} disponivel por {time_to_show} segundos",
                     self.screen,
-                    font_size = 18
-                    pos_x_center=500
+                    font_size = 18,
+                    pos_x_center=500,
                     pos_y_center=40
                 )
             else:
@@ -123,7 +123,7 @@ class Game:
         else:
             draw_message_component("Pressione qualquer tecla para reiniciar", self.screen, pos_y_center= half_screen_height + 140)
             draw_message_component(
-                f"Sua pontuação: {self.score}"
+                f"Sua pontuação: {self.score}",
                 self.screen,
                 pos_y_center = half_screen_height - 150
             )
